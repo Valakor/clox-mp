@@ -668,6 +668,7 @@ static void variable(bool canAssign)
 static Token syntheticToken(const char* text)
 {
 	Token token;
+	token.type = TOKEN_ERROR;
 	token.start = text;
 	token.length = (int)strlen(text);
 	return token;
